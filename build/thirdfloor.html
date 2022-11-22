@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITBEMS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<nav>
+  <div class="container-fluid">
+      <a class="navbar-brand">
+          <img src="img/logo.png" alt="" width="500">
+      </a>
+      <div class="header" >
+          <ul>
+              <li><a href="index.html">Home</li>
+                  <li><a href="firstfloor.html">First Floor</li>
+                  <li><a href="secondfloor.html">Second Floor</li>
+                  <li><a href="thirdfloor.html">Third Floor</li>
+                  <li><a href="fourthfloor.html">Fourth Floor</li>
+              </ul></a>
+          </ul>
+      </div>    
+  </div>
+</nav>
+<body style="background-image: url('img/bg.png');"> 
+    <main>
+        
+
+            <div class="home">
+                <div class="container" style="display: flex;">
+                    <div style="width: 65%">
+                        <img src="img/3floor.png" class="res1">  
+                        <div class="constraint" style="margin-top: -42%; margin-left: 41%;">
+                            <button class="round-button" id="myBtn" >
+                            <div class="round-button-circle">
+                            <span class="round-button"></span>
+                            </div>
+                            </button>
+                            <!-- The Modal -->
+                              <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                              <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <img src="img/Calendar.png" class="center" width="600" height="auto">
+                                    <div class="grid-container">
+                                      <div class="grid-item">
+                                        <div><p style="font-family: Arial, Helvetica, sans-serif; margin-left: 5%;
+                                          font-weight: 300; font-size: medium; color: white;">Amount of People</p>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; margin-left: 25%;
+                                          font-weight: 300; font-size: xx-large; color: white;">40 peoples</p>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; margin-left: 5%;
+                                          font-weight: 300; font-size: x-small; color: white;">Update <span id="datetime"></span></p></div>                                       
+                                      </div>
+                                      <div class="grid-item">
+                                        <div><p style="font-family: Arial, Helvetica, sans-serif; margin-left: 5%;
+                                          font-weight: 300; font-size: medium; color: white;">Temperature</p>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; margin-left: 25%;
+                                          font-weight: 300; font-size: xx-large; color: white;">23 C</p>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; margin-left: 5%;
+                                          font-weight: 300; font-size: x-small; color: white;">Update <span id="datetime2"></span></p></div>
+                                      </div>
+                                      <div class="grid-item">
+                                        <div><p style="font-family: Arial, Helvetica, sans-serif; margin-left: 5%;
+                                          font-weight: 300; font-size: medium; color: white;">Electric Power</p>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; margin-left: 25%;
+                                          font-weight: 300; font-size: xx-large; color: white;">2340 watt</p>
+                                          <p style="font-family: Arial, Helvetica, sans-serif; margin-left: 5%;
+                                          font-weight: 300; font-size: x-small; color: white;">Update <span id="datetime3"></span></p></div>
+                                      </div>
+                                    </div>
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+                              </div>
+                            </div>
+                        </div>
+                        <div class="constraint" style="margin-top: -6%; margin-left: 48%;">
+                            <button class="round-button">
+                            <div class="round-button-circle">
+                            <span class="round-button"></span>
+                            </div>
+                            </button>
+                        </div>
+                        <div class="constraint" style="margin-top: -9%; margin-left: 75%;">
+                            <button class="round-button">
+                            <div class="round-button-circle">
+                            <span class="round-button"></span>
+                            </div>
+                            </button>
+                        </div>
+                        <div class="constraint" style="margin-top: 6%; margin-left: 67%;">
+                            <button class="round-button">
+                            <div class="round-button-circle">
+                            <span class="round-button"></span>
+                            </div>
+                            </button>
+                        </div>
+                        <div class="constraint" style="margin-top: -6%; margin-left: 75%;">
+                            <button class="round-button">
+                            <div class="round-button-circle">
+                            <span class="round-button"></span>
+                            </div>
+                            </button>
+                        </div>
+                        <div class="constraint" style="margin-top: 16%; margin-left: 42%;">
+                            <button class="round-button">
+                            <div class="round-button-circle">
+                            <span class="round-button"></span>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div style="flex-grow: 1;">
+                        <div class="infobox" >
+                            <div style="display: flex; height: 60px;">
+                                <div style="
+                                            width: 20%;
+                                            padding: 3%;
+                                            background: white;">
+                                                <p style="font-family: Arial, Helvetica, sans-serif; margin-top: -3%;
+                                                font-weight: bold; "><span id="datetime1"></span></p>
+                                </div>
+                                <div style="flex-grow: 1;
+                                            padding: 3%;
+                                            margin-left: -2%;
+                                            background: white; text-align: center;
+                                            "><p style="font-family: Arial, Helvetica, sans-serif; margin-top: -2%;
+                                            font-weight: 100; font-size: large;">School of Information Technology Floor 3</p>
+                                </div>          
+                            </div>
+                            <div style="display: flex; height: 40px;">
+                                <div style="border-color: white;
+                                            width: 25%;
+                                            padding: 3%;
+                                            background: rgba(63, 105, 214, 1);">
+                                                <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 3%;
+                                                font-weight: bold; color:white;"><span id="time"></span></p>
+                                </div>
+                                <div style="flex-grow: 1;
+                                            padding: 3%; border-width: 2;
+                                            margin-left: -2%; border-color: white;
+                                            background: rgba(63, 105, 214, 1); text-align: center;
+                                            "><p style="font-family: Arial, Helvetica, sans-serif;  margin-top: -1%;
+                                            font-weight: 300; font-size: x-large; color: white;">Amount of electricity used</p>
+                                </div>        
+                            </div>
+                            <div class="doughnut-chart-container">
+                               <canvas id="myChart"></canvas>
+                            </div>
+                            <div style="height: 5%;
+                            background: white;
+                            width: 100%; text-align: center;
+                            margin-top: 5%"><p style="font-family: Arial, Helvetica, sans-serif; margin-top: 5%;
+                                            font-weight: 300; font-size: x-large; color: black;"> Daily Consumed Energy Accumulation</p></div>
+                                <canvas id="line-chart" width="800" height="450"></canvas>
+                        </div>   
+            </div>
+        </div>
+               
+
+       
+    </main>
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="js/luxy.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript"></script>
+<script src="node_modules/jquery"></script>
+<script src="node_modules/chart.js"></script>
+<script src="js/doughnut.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+    var dt = new Date();
+    document.getElementById("datetime1").innerHTML = dt.toLocaleDateString();
+    var dt = new Date();
+    document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
+    var dt = new Date();
+    document.getElementById("datetime3").innerHTML = dt.toLocaleDateString();
+    </script>
+    </script>
+<script>
+        var dt = new Date();
+        document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+</script>
+
+<script>
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx,{
+  type: 'doughnut',
+  data: {
+    labels: [
+    'Meeting room 1',
+    'Meeting room 2',
+    'Meeting room 3',
+    'Meeting room 4',
+    'R-Lab',
+    'D-Lab'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [46283, 24729, 32192, 24356, 23445,34523],
+    backgroundColor: [
+      '#121258',
+      '#003F5C',
+      '#2F4B7C',
+      '#665191',
+      '#A05195',
+      '#D45087',
+    ],
+    hoverOffset: 1
+  }]
+    },
+  }
+
+)
+</script>
+
+<script>
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: ['10/23','10/24','10/25','10/26','10/27','10/28','10/29','10/30','10/31','11/1'],
+    datasets: [{ 
+        data: [32133,11124,32106,31106,32107,31111,32133,33221,31783,32478],
+        label: "Meeting room 1",
+        borderColor: "#121258",
+        fill: false
+      }, { 
+        data: [23182,33150,41321,32232,31115,29119,31327,31402,32700,25267],
+        label: "Meeting room 2",
+        borderColor: "#003F5C",
+        fill: false
+      }, { 
+        data: [32168,31170,33178,31190,33203,32276,31408,32547,31675,31734],
+        label: "Meeting room 3",
+        borderColor: "#2F4B7C",
+        fill: false
+      }, { 
+        data: [32140,33120,23110,32116,31224,23138,31274,23167,31508,31784],
+        label: "Meeting room 4",
+        borderColor: "#665191",
+        fill: false
+      }, { 
+        data: [31216,32132,23212,21123,32127,21326,32182,21172,22312,23433],
+        label: "R-Lab",
+        borderColor: "#A05195",
+        fill: false
+      }, { 
+        data: [32133,21124,32106,31106,32107,21111,32133,23221,31783,32478],
+        label: "D-Lab",
+        borderColor: "#D45087",
+        fill: false
+      }
+    ]
+  },
+});
+    
+</script>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+  modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+  modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+  if (event.target == modal) {
+  modal.style.display = "none";
+  }
+  }
+  </script>
+</body>
+
+
+</html>
